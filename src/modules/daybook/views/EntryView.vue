@@ -28,7 +28,7 @@
   <Fab icon="fa-save" />
 
   <img
-    src="https://static.wikia.nocookie.net/villains/images/9/9f/Dr._Robotnik_%28AOSTH%292.png/revision/latest?cb=20190812163045"
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/New_York_Comic_Con_2014_-_Dr._Robotnik_%2815314367147%29.jpg/800px-New_York_Comic_Con_2014_-_Dr._Robotnik_%2815314367147%29.jpg"
     alt=""
     class="img-thumbnail"
   />
@@ -53,13 +53,12 @@ textarea {
   &:focus {
     outline: none;
   }
-
-  img {
-    width: 200px;
-    position: fixed;
-    bottom: 150px;
-    right: 20px;
-    box-shadow: 0px 5px 10 px rgba(#000000, 0.2);
-  }
+}
+img {
+  width: 200px;
+  position: fixed;
+  bottom: 150px;
+  right: 20px;
+  box-shadow: 0px 5px 10 px rgba(#000000, 0.2);
 }
 </style>

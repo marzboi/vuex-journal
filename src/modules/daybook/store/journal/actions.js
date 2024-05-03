@@ -1,8 +1,7 @@
 // export const myAction = async ( { commit } ) => {
+// }
 
 import journalApi from "@/api/journalApi";
-
-// }
 
 export const loadEntries = async ({ commit }) => {
   const { data } = await journalApi.get("/entries.json");
@@ -18,6 +17,13 @@ export const loadEntries = async ({ commit }) => {
   commit("setEntries", entries);
 };
 
-export const updateEntry = async (/*{ commit }*/) => {};
+export const updateEntry = async ({ commit }, entry) => {
+  const { date, picture, text } = entry;
+  const dataToSave = { date, picture, text };
+
+  journalApi.put(`entries/${entry.id}.json`, dataToSave);
+
+  commit("updateEntry", { ...entry });
+};
 
 export const creteEntry = async (/*{ commit }*/) => {};
